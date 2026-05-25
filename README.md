@@ -1,0 +1,1 @@
+# Kalkukacka_ztrat_sklad
