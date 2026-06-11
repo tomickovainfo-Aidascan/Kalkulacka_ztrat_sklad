@@ -6,17 +6,17 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalkulačka ztrát ve skladu zdarma | Gabriela Tomíčková</title>
-  <meta name="description" content="Kalkulačka skrytých ztrát ve skladu. Zadejte pár čísel a zjistěte kolik hodin a korun vám každý měsíc odchází v rutině. Výsledek okamžitě, zdarma.">
+<title>Kalkulačka ztrát zdarma | Gabriela Tomíčková</title>
+  <meta name="description" content="Kalkulačka ztrát ve výrobě a skladu. Zadejte pár čísel a zjistěte kolik hodin a korun vám každý měsíc odchází v rutině. Výsledek okamžitě, zdarma.">
   <meta name="keywords" content="kalkulačka ztrát sklad, ztráty ve skladu, optimalizace skladu, zbytečná chůze sklad, procesní audit zdarma">
   <meta name="author" content="Gabriela Tomíčková">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Kalkulačka skrytých ztrát ve skladu - zdarma | Gabriela Tomíčková">
+  <meta property="og:title" content="Kalkulačka ztrát - zdarma | Gabriela Tomíčková">
   <meta property="og:description" content="Zjistěte kolik hodin a korun vám každý měsíc odchází ve zbytečné chůzi, ruční administrativě a příjmu kamionu. Kalkulačka ztrát skladu zdarma.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="cs_CZ">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kalkulačka skrytých ztrát ve skladu - zdarma | Gabriela Tomíčková">
+  <meta name="twitter:title" content="Kalkulačka ztrát - zdarma | Gabriela Tomíčková">
   <meta name="twitter:description" content="Zjistěte kolik hodin a korun vám každý měsíc odchází ve zbytečné chůzi, ruční administrativě a příjmu kamionu. Kalkulačka ztrát skladu zdarma.">
   <link rel="canonical" href="">
   <script type="application/ld+json">
@@ -145,16 +145,14 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
 <body>
 
 <nav>
-  <div class="nav-brand">Gabriela <span>Tomíčková</span></div>
-  <a href="https://gabrielatomickova.cz" style="font-size:13px;font-weight:600;color:var(--mid);text-decoration:none;padding:6px 14px;border:1px solid var(--border);border-radius:4px;transition:all 0.2s;" onmouseover="this.style.borderColor='#e9a91b';this.style.color='#e9a91b'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--mid)'">gabrielatomickova.cz</a>
-  <a href="mailto:tomickova.info@gmail.com" class="nav-cta">Napsat email</a>
+  <a href="https://gabrielatomickova.cz" class="nav-brand" style="text-decoration:none;">Gabriela <span>Tomíčková</span></a>
 </nav>
 
 <div class="page-header">
   <div class="page-header-inner">
-    <div class="tool-badge">Kalkulačka ztrát ve skladu</div>
-    <h1>Kolik vás stojí <em>neviditelné ztráty</em> ve skladu?</h1>
-    <p>Zadejte pár čísel. Uvidíte kolik hodin a korun vám každý měsíc odchází v rutině, které se dá předejít. Výsledek je orientační, ale z praxe vím, že bývá překvapivě blízko.</p>
+    <div class="tool-badge">Kalkulačka ztrát</div>
+    <h1>Kolik vás stojí <em>neviditelné ztráty?</em></h1>
+    <p>Zadejte pár čísel. Uvidíte kolik hodin a korun vám každý měsíc odchází v rutině, které se dá předejít. Funguje pro sklad i výrobu.<br>Výsledek je orientační, ale z praxe vím, že bývá překvapivě blízko.</p>
   </div>
 </div>
 
@@ -165,19 +163,19 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
       <div class="panel-section">
         <div class="panel-section-title">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Váš sklad
+          Váš provoz
         </div>
         <div class="input-group">
-          <div class="input-label">Počet pracovníků ve skladu <span class="input-hint">fyzická práce</span></div>
-          <div class="input-row"><input type="range" id="lide" min="1" max="50" value="8" oninput="update()"><span class="input-val" id="lide-val">8</span></div>
+          <div class="input-label">Počet pracovníků <span class="input-hint">fyzická práce</span></div>
+          <div class="input-row"><input type="range" id="lide" min="1" max="150" value="8" oninput="update()"><span class="input-val" id="lide-val">8</span></div>
         </div>
         <div class="input-group">
           <div class="input-label">Počet směn denně</div>
           <div class="input-row"><input type="range" id="smeny" min="1" max="3" value="2" step="1" oninput="update()"><span class="input-val" id="smeny-val">2</span></div>
         </div>
         <div class="input-group">
-          <div class="input-label">Průměrná hodinová mzda <span class="input-hint">hrubá, Kč</span></div>
-          <div class="input-row"><input type="range" id="mzda" min="150" max="400" value="220" step="10" oninput="update()"><span class="input-val" id="mzda-val">220 Kč</span></div>
+          <div class="input-label">Náklady na zaměstnance <span class="input-hint">Kč / hod včetně odvodů</span></div>
+          <div class="input-row"><input type="range" id="mzda" min="150" max="1200" value="300" step="10" oninput="update()"><span class="input-val" id="mzda-val">300 Kč</span></div>
         </div>
       </div>
 
@@ -195,11 +193,15 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
           <div class="input-row"><input type="range" id="admin" min="0" max="120" value="30" step="5" oninput="update()"><span class="input-val" id="admin-val">30 min</span></div>
         </div>
         <div class="input-group">
-          <div class="input-label">Počet kamionů / dodávek týdně</div>
+          <div class="input-label">Čekání a prostoje <span class="input-hint">min / směna / člověk</span></div>
+          <div class="input-row"><input type="range" id="prostoje" min="0" max="120" value="20" step="5" oninput="update()"><span class="input-val" id="prostoje-val">20 min</span></div>
+        </div>
+        <div class="input-group">
+          <div class="input-label">Počet dodávek a expedic týdně</div>
           <div class="input-row"><input type="range" id="kamionu" min="0" max="30" value="5" step="1" oninput="update()"><span class="input-val" id="kamionu-val">5</span></div>
         </div>
         <div class="input-group">
-          <div class="input-label">Ruční zpracování příjmu / výdeje <span class="input-hint">min / kamion</span></div>
+          <div class="input-label">Ruční zpracování dodávky / expedice <span class="input-hint">min / dodávka</span></div>
           <div class="input-row"><input type="range" id="kamion-cas" min="0" max="120" value="45" step="5" oninput="update()"><span class="input-val" id="kamion-cas-val">45 min</span></div>
         </div>
       </div>
@@ -264,8 +266,18 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
         <div class="breakdown-row">
           <div class="breakdown-icon-box"></div>
           <div class="breakdown-text">
-            <div class="breakdown-name">Příjem a výdej kamionu</div>
-            <div class="breakdown-desc">ručně, bez systému, přeskládávání po odjezdu</div>
+            <div class="breakdown-name">Čekání a prostoje</div>
+            <div class="breakdown-desc">čekání na materiál, instrukce, informace, hledání nářadí</div>
+          </div>
+          <div class="breakdown-bar-wrap"><div class="breakdown-bar-bg"><div class="breakdown-bar" id="bar-prostoje" style="width:0%"></div></div></div>
+          <div class="breakdown-val" id="val-prostoje">0 h/týd</div>
+        </div>
+
+        <div class="breakdown-row">
+          <div class="breakdown-icon-box"></div>
+          <div class="breakdown-text">
+            <div class="breakdown-name">Dodávky a expedice</div>
+            <div class="breakdown-desc">ruční zpracování, papírové záznamy, přeskládávání</div>
           </div>
           <div class="breakdown-bar-wrap"><div class="breakdown-bar-bg"><div class="breakdown-bar" id="bar-kamion" style="width:0%"></div></div></div>
           <div class="breakdown-val" id="val-kamion">0 h/týd</div>
@@ -274,10 +286,10 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
 
       <div class="cta-box">
         <div class="cta-box-text">
-          <strong>Vidíte potenciál ke zlepšení?</strong>
-          <span>Napište mi - podíváme se na to společně.</span>
+          <strong>Nechcete to řešit úplně sami?</strong>
+          <span>Domluvte si 30min hovor zdarma. Podíváme se na čísla spolu.</span>
         </div>
-        <a href="mailto:tomickova.info@gmail.com">Napsat email</a>
+        <a href="https://calendly.com/tomickova-info/30min" target="_blank">Chci 30min hovor zdarma</a>
       </div>
     </div>
   </div>
@@ -286,13 +298,22 @@ footer { background:#0a0a0a; padding:24px 40px; display:flex; justify-content:sp
 <div class="main" style="padding-top:0;padding-bottom:24px;">
   <div class="calc-grid">
     <div></div>
-    <div style="background:var(--gold-light);border:1px solid rgba(233,169,27,0.3);border-radius:10px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-      <div>
-        <div style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px;">Chcete jít hlouběji?</div>
-        <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px;">Interaktivní checklist auditu skladu</div>
-        <div style="font-size:13px;color:var(--mid);">10 otázek, konkrétní tipy, výsledek zdarma.</div>
+    <div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:14px;">Chcete zkoumat hlouběji?</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="background:var(--gold-light);border:1px solid rgba(233,169,27,0.3);border-radius:10px;padding:20px 22px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:8px;">Pro sklad</div>
+        <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:6px;">Mini audit skladu</div>
+        <div style="font-size:13px;color:var(--mid);margin-bottom:14px;">10 otázek, konkrétní tipy, výsledek zdarma.</div>
+        <a href="https://audit.gabrielatomickova.cz" target="_blank" style="display:inline-block;background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;padding:10px 20px;border-radius:4px;text-decoration:none;">Spustit audit</a>
       </div>
-      <a href="https://audit.gabrielatomickova.cz" target="_blank" style="display:inline-block;background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;padding:11px 22px;border-radius:4px;text-decoration:none;white-space:nowrap;flex-shrink:0;">Spustit audit zdarma</a>
+      <div style="background:var(--gold-light);border:1px solid rgba(233,169,27,0.3);border-radius:10px;padding:20px 22px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:8px;">Pro výrobu</div>
+        <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:6px;">Měřič plýtvání výroba</div>
+        <div style="font-size:13px;color:var(--mid);margin-bottom:14px;">Změřte ztráty přímo v provozu. Za jednu směnu víte kde začít.</div>
+        <a href="https://gabrielatomickova.cz/meric-plytvani-prodejni-str.html" target="_blank" style="display:inline-block;background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;padding:10px 20px;border-radius:4px;text-decoration:none;">Zjistit více</a>
+      </div>
+    </div>
     </div>
   </div>
 </div>
@@ -312,6 +333,7 @@ function update() {
   const admin = +document.getElementById("admin").value;
   const kamionu = +document.getElementById("kamionu").value;
   const kamionCas = +document.getElementById("kamion-cas").value;
+  const prostoje = +document.getElementById("prostoje").value;
 
   document.getElementById("lide-val").textContent = lide;
   document.getElementById("smeny-val").textContent = smeny;
@@ -320,11 +342,13 @@ function update() {
   document.getElementById("admin-val").textContent = admin + " min";
   document.getElementById("kamionu-val").textContent = kamionu;
   document.getElementById("kamion-cas-val").textContent = kamionCas + " min";
+  document.getElementById("prostoje-val").textContent = prostoje + " min";
 
   const chuzeh = (chuze / 60) * smeny * lide * 5;
   const adminh = (admin / 60) * lide * 5;
   const kamionh = (kamionCas / 60) * kamionu;
-  const celkem = chuzeh + adminh + kamionh;
+  const prostojes = (prostoje / 60) * smeny * lide * 5;
+  const celkem = chuzeh + adminh + kamionh + prostojes;
   const mesic = celkem * 4.33 * mzda * 1.34;
   const rok = mesic * 12;
   const km = (chuze / 60) * smeny * 4 * 250;
@@ -338,9 +362,11 @@ function update() {
   document.getElementById("res-uvazek").textContent = uvazek.toFixed(1);
   document.getElementById("bar-chuze").style.width = (chuzeh/total*100) + "%";
   document.getElementById("bar-admin").style.width = (adminh/total*100) + "%";
+  document.getElementById("bar-prostoje").style.width = (prostojes/total*100) + "%";
   document.getElementById("bar-kamion").style.width = (kamionh/total*100) + "%";
   document.getElementById("val-chuze").textContent = chuzeh.toFixed(1) + " h/týd";
   document.getElementById("val-admin").textContent = adminh.toFixed(1) + " h/týd";
+  document.getElementById("val-prostoje").textContent = prostojes.toFixed(1) + " h/týd";
   document.getElementById("val-kamion").textContent = kamionh.toFixed(1) + " h/týd";
 }
 update();
