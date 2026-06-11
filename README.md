@@ -1,1 +1,1 @@
-# Kalkulacka_ztrat_sklad
+# Kalkulacka_ztrat
